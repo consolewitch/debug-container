@@ -5,7 +5,7 @@ on:
     branches:
       - "main"
   schedule:
-    - cron: "35 2 * * 0"
+    - cron: "40 2 * * 0"
 jobs:
   docker-build:
     runs-on: ubuntu-latest
