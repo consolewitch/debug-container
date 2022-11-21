@@ -2,10 +2,7 @@ name: Build debug container
 run-name: Build docker
 on:
   schedule:
-    - cron: '20 5 * * 0'
-  push:
-    branches:
-      - "main"
+    - cron: '30 5 * * 0'
 jobs:
   docker-build:
     runs-on: ubuntu-latest
