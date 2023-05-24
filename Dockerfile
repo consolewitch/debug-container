@@ -4,4 +4,5 @@ RUN apt-get update && \
     apt-get install -y dnsutils tree vim nmap telnet netcat curl wget && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-ENV TERMINAL=TRUE
+COPY --chmod=755 entrypoint.sh /
+ENTRYPOINT /entrypoint.sh
